@@ -19,6 +19,8 @@ To normalize Finnish, all you need to do is to run:
     print(normalize_sentence("mä syön paljo karkkii".split(" ")))
     >> minä syön paljon karkkia
 
+To use the same chunk level BRNN model as described in the paper, you can pass *wnut19_model=True*, however this model might only work on Linux.
+
 ## Cite
 
 Niko Partanen, Mika Hämäläinen, and Khalid Alnajjar. Accepted. Dialect Text Normalization to Normative Standard Finnish. In *the Proceedings of the 5th Workshop on Noisy User-generated Text (W-NUT)*.
