@@ -1,4 +1,6 @@
 # 🐶 Murre 🐕
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3473427.svg)](https://doi.org/10.5281/zenodo.3473427)
+
 The amazing Murre (*genitive Murren* 🐕) will normalize non-standard Finnish (puhekieli) to standard Finnish (kirjakieli). 
 This repository is maintained by [Mika Hämäläinen](https://mikakalevi.com).
 
