@@ -25,4 +25,4 @@ To use the same chunk level BRNN model as described in the paper, you can pass *
 
 ## Cite
 
-Niko Partanen, Mika Hämäläinen, and Khalid Alnajjar. Accepted. Dialect Text Normalization to Normative Standard Finnish. In *the Proceedings of the 5th Workshop on Noisy User-generated Text (W-NUT)*.
+Niko Partanen, Mika Hämäläinen, and Khalid Alnajjar. 2019. [Dialect Text Normalization to Normative Standard Finnish](https://www.aclweb.org/anthology/D19-5519/). In *the Proceedings of the 5th Workshop on Noisy User-generated Text (W-NUT)*.
