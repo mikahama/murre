@@ -1,1 +1,1 @@
-from .normalizer import normalize_sentence
+from .normalizer import normalize_sentence, normalize_sentences
