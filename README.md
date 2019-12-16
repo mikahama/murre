@@ -8,8 +8,7 @@ This repository is maintained by [Mika Hämäläinen](https://mikakalevi.com).
 
 This library is designed for Python 3 and it may not work on Python 2.
 
-    pip3 --no-cache-dir install pip==18.1
-    pip3 install murre --process-dependency-links
+    pip3 install murre
     python3 -m murre.download
     
 ## Usage
@@ -22,6 +21,16 @@ To normalize Finnish, all you need to do is to run:
     >> minä syön paljon karkkia
 
 To use the same chunk level BRNN model as described in the paper, you can pass *wnut19_model=True*, however this model might only work on Linux.
+
+You can normalize multiple sentences at the same time by running
+
+    from murre import normalize_sentences
+    
+	sents = ["kissa syö karkkii", "jok laulaa tuol puole", "en tiiä oikee et kuka se o", "kyl on hölömöö"]
+	sentences = [x.split(" ") for x in sents] #tokenize each sentence [["kissa", "syö", "karkkii"], ["jok", "laulaa"...]...]
+
+	print(normalize_sentences(sentences))
+    >> ['kissa syö karkkia', 'joka laulaa tuolla puolen', 'en tiedä oikein että kuka se on', 'kyllä on hölmöä']
 
 ## Cite
 
