@@ -16,7 +16,7 @@ def _dechunk(l):
 
 def normalize_sentence(tokens, wnut19_model=False):
 	if wnut19_model:
-		#Trained on Linux, so it doesn't work on Mac for instance :-(
+		#New default model, might not work on some systems
 		model_name = "murre_norm_paper.pt"
 	else:
 		#Same model trained on MacOS, slightly higher character error rate

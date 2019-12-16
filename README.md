@@ -1,4 +1,6 @@
-# Murre
+# 🐶 Murre 🐕
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3473427.svg)](https://doi.org/10.5281/zenodo.3473427)
+
 The amazing Murre (*genitive Murren* 🐕) will normalize non-standard Finnish (puhekieli) to standard Finnish (kirjakieli). 
 This repository is maintained by [Mika Hämäläinen](https://mikakalevi.com).
 
@@ -19,6 +21,8 @@ To normalize Finnish, all you need to do is to run:
     print(normalize_sentence("mä syön paljo karkkii".split(" ")))
     >> minä syön paljon karkkia
 
+To use the same chunk level BRNN model as described in the paper, you can pass *wnut19_model=True*, however this model might only work on Linux.
+
 ## Cite
 
-Niko Partanen, Mika Hämäläinen, and Khalid Alnajjar. Accepted. Dialect Text Normalization to Normative Standard Finnish. In *the Proceedings of the 5th Workshop on Noisy User-generated Text (W-NUT)*.
+Niko Partanen, Mika Hämäläinen, and Khalid Alnajjar. 2019. [Dialect Text Normalization to Normative Standard Finnish](https://www.aclweb.org/anthology/D19-5519/). In *the Proceedings of the 5th Workshop on Noisy User-generated Text (W-NUT)*.
