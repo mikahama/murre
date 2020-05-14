@@ -1,4 +1,4 @@
-from murre import normalize_sentence, normalize_sentences
+from murre import normalize_sentence, normalize_sentences, dialectalize_sentences, dialectalize_sentence, supported_dialects
 
 from murre import generator
 
@@ -11,4 +11,14 @@ sentences = [x.split(" ") for x in sents]
 print(normalize_sentences(sentences))
 """
 
-print(generator.translate(["k i s s a n i _ j u o k s i _ p o i s"]))
+#print(generator._translate(["Etelä-Häme k i s s a n i _ j u o k s i _ p o i s"]))
+
+
+sents = ["minä nauran ja kovaa", "hattu on päässä aina talvisin"]
+sentences = [x.split(" ") for x in sents]
+
+print(dialectalize_sentences(sentences, "Inkerinsuomalaismurteet"))
+
+print(dialectalize_sentence("minä ihmettelen ja suuresti".split(" "), "Keski-Karjala"))
+
+print(supported_dialects())

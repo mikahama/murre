@@ -3,22 +3,59 @@ from mikatools import *
 
 import tensorflow as tf
 import tensorflow_addons as tfa
+import pyonmttok
+from .dialects import supported_dialects
+
+class UnknownDialectException(Exception):
+	"""docstring for UnknownDialectException"""
+	def __init__(self):
+		super(UnknownDialectException, self).__init__()
+
+
 try:
     tfa.seq2seq.gather_tree(0, 0, 0, 0)
 except tf.errors.InvalidArgumentError:
     pass
 
 model = None
-checkpoint = None
+tokenizer = None
 
+def _chunks(l, n):
+	"""Yield successive n-sized chunks from l."""
+	for i in range(0, len(l), n):
+		yield l[i:i + n]
+
+def generate(sentences, dialect):
+	if dialect not in supported_dialects():
+		raise UnknownDialectException(dialect + " is not a supported dialect! The supported dialects are: " + ", ".join(supported_dialects()))
+	res = []
+	for sentence in sentences:
+		s = [" ".join(w) for w in sentence]
+		chunks = _chunks(s, 3)
+		parts = [dialect + " " + " _ ".join(x).lower() for x in chunks]
+		r_parts = _translate(parts)
+		r = []
+		for r_part, o_part in zip(r_parts, parts):
+			res_tokens = r_part.split("_")
+			o_tokens = o_part.split("_")
+			if len(res_tokens) > len(o_tokens):
+				res_tokens = res_tokens[:len(o_tokens)]
+			r.append("_".join(res_tokens))
+
+
+		r = "_".join(r)
+		res.append(r.replace("_"," "))
+	return res
 
 
 def _load_model():
 	global model
+	global tokenizer
 	model = tf.saved_model.load(script_path("models/generate/flags_dist"))
+	tokenizer = pyonmttok.Tokenizer("none", sp_model_path=script_path("models/generate/flags_dist"))
 
 
-def translate(texts):
+def _translate(texts):
 	if model is None:
 		_load_model()
 	_translate_fn = model.signatures["serving_default"]
@@ -50,5 +87,5 @@ def _postprocess( outputs):
 	texts = []
 	for tokens, length in zip(outputs["tokens"].numpy(), outputs["length"].numpy()):
 		tokens = tokens[0][:length[0]].tolist()
-		texts.append(self._tokenizer.detokenize(tokens))
+		texts.append(tokenizer.detokenize(tokens))
 	return texts
