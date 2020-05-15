@@ -1,4 +1,6 @@
-import opennmt as onmt
+import os
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2' 
+
 from mikatools import *
 
 import tensorflow as tf

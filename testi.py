@@ -17,8 +17,16 @@ print(normalize_sentences(sentences))
 sents = ["minä nauran ja kovaa", "hattu on päässä aina talvisin"]
 sentences = [x.split(" ") for x in sents]
 
+"""
+
 print(dialectalize_sentences(sentences, "Inkerinsuomalaismurteet"))
 
 print(dialectalize_sentence("minä ihmettelen ja suuresti".split(" "), "Keski-Karjala"))
 
 print(supported_dialects())
+
+"""
+
+for dialect in supported_dialects():
+	print(dialect)
+	print(dialectalize_sentences(sentences, dialect))
