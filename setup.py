@@ -35,7 +35,7 @@ setup(
     # Author details
     author='Mika Hämäläinen, Dept. of  Digital Humanities, University of Helsinki',
     author_email='mika.hamalainen@helsinki.fi',
-
+    zip_safe=False,
     # Choose your license
     license='Apache License, Version 2.0',
 

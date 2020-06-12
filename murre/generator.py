@@ -32,6 +32,8 @@ def generate(sentences, dialect):
 		raise UnknownDialectException(dialect + " is not a supported dialect! The supported dialects are: " + ", ".join(supported_dialects()))
 	res = []
 	for sentence in sentences:
+		if isinstance(sentence, str):
+			sentence = sentence.split(" ")
 		s = [" ".join(w) for w in sentence]
 		chunks = _chunks(s, 3)
 		parts = [dialect + " " + " _ ".join(x).lower() for x in chunks]
