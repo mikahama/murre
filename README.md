@@ -61,7 +61,7 @@ Niko Partanen, Mika Hämäläinen, and Khalid Alnajjar. 2019. [Dialect Text Norm
 
 **Dialect generation**
 
-Hämäläinen, M., Partanen, N., Alnajjar, K., Rueter J. & Poibeau T. (in press). Automatic Dialect Adaptation in Finnish and its Effect on Perceived Creativity. In Proceedings of the 11th International Conference on Computational Creativity
+Hämäläinen, M., Partanen, N., Alnajjar, K., Rueter J. & Poibeau T. (2020). [Automatic Dialect Adaptation in Finnish and its Effect on Perceived Creativity](https://researchportal.helsinki.fi/files/144027877/ICCC20_finnish_dialect_normalization.pdf). In Proceedings of the 11th International Conference on Computational Creativity. p. 204-211
 
 ## Data
 
