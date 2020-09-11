@@ -52,6 +52,12 @@ The list of available dialects can be obtained by:
     supported_dialects()
     >> ['Pohjois-Satakunta', 'Keski-Karjala', 'Kainuu', 'Etelä-Pohjanmaa', 'Etelä-Satakunta', 'Pohjois-Savo', 'Pohjois-Karjala', 'Keski-Pohjanmaa', 'Kaakkois-Häme', 'PohjoinenKeski-Suomi', 'Pohjois-Pohjanmaa', 'PohjoinenVarsinais-Suomi', 'Etelä-Karjala', 'Länsi-Uusimaa', 'Inkerinsuomalaismurteet', 'LäntinenKeski-Suomi', 'Länsi-Satakunta', 'Etelä-Savo', 'Länsipohja', 'Pohjois-Häme', 'EteläinenKeski-Suomi', 'Etelä-Häme', 'Peräpohjola']
 
+## Business solutions
+
+
+<img src="https://rootroo.com/cropped-logo-01-png/" alt="Rootroo logo" width="128px" height="128px">
+
+Non-standard dialectal data can be a mess to deal with when you are processing your customer data. Let us help! [Rootroo offers consulting related to text normalization](https://rootroo.com/). We have a strong academic background in the state-of-the-art AI solutions for every NLP need. Just contact us, we won't bite.
 
 ## Cite
 
