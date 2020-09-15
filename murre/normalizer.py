@@ -17,6 +17,8 @@ def normalize_sentences(tokenized_sentences, wnut19_model=False):
 	chunks = []
 	sentence_map = []
 	for i, tokenized_sentence in enumerate(tokenized_sentences):
+		if isinstance(tokenized_sentence, str):
+			tokenized_sentence = tokenized_sentence.split(" ")
 		chunks_l = _chunks([" ".join(x) for x in tokenized_sentence],3)
 		sent_chunks = [" _ ".join(x) for x in chunks_l]
 		for c in sent_chunks:
@@ -42,6 +44,8 @@ def normalize_sentences(tokenized_sentences, wnut19_model=False):
 
 
 def normalize_sentence(tokens, wnut19_model=False):
+	if isinstance(tokens, str):
+		tokens = tokens.split(" ")
 	chunks_l = _chunks([" ".join(x) for x in tokens],3)
 	chunks = [" _ ".join(x) for x in chunks_l]
 	res = _normalize_chunks(chunks, wnut19_model=wnut19_model)
