@@ -23,9 +23,9 @@ setup(
     # Versions should comply with PEP440.  For a discussion on single-sourcing
     # the version across setup.py and the project code, see
     # https://packaging.python.org/en/latest/single_source_version.html
-    version='1.1.1',
+    version='1.2.0',
 
-    description='The amazing Murre will normalize non-standard Finnish and dialectalize standard Finnish!',
+    description='The amazing Murre will normalize non-standard Finnish and Swedish, and dialectalize standard Finnish!',
     long_description=long_description,
     long_description_content_type='text/markdown',
 
@@ -33,8 +33,8 @@ setup(
     url='https://github.com/mikahama/murre',
 
     # Author details
-    author='Mika Hämäläinen, Dept. of  Digital Humanities, University of Helsinki',
-    author_email='mika.hamalainen@helsinki.fi',
+    author='Mika Hämäläinen, Rootroo Ltd',
+    author_email='mika@rootroo.com',
     zip_safe=False,
     # Choose your license
     license='Apache License, Version 2.0',
