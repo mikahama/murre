@@ -72,16 +72,16 @@ Non-standard dialectal data can be a mess to deal with when you are processing y
 
 **Normalization (Finnish)**
 
-Niko Partanen, Mika Hämäläinen, and Khalid Alnajjar. 2019. [Dialect Text Normalization to Normative Standard Finnish](https://www.aclweb.org/anthology/D19-5519/). In *the Proceedings of the 5th Workshop on Noisy User-generated Text (W-NUT)*.
+Niko Partanen, Mika Hämäläinen, and Khalid Alnajjar. (2019). [Dialect Text Normalization to Normative Standard Finnish](https://www.aclweb.org/anthology/D19-5519/). In *the Proceedings of the 5th Workshop on Noisy User-generated Text (W-NUT)*.
 
 
 **Normalization (Swedish)**
 
-Mika Hämäläinen, Niko Partanen and Khalid Alnajjar. Accepted. Normalization of Different Swedish Dialects Spoken in Finland. In *the Proceedings of the 4th ACM SIGSPATIAL International Workshop on Geospatial Humanities*.
+Mika Hämäläinen, Niko Partanen and Khalid Alnajjar. (Accepted). Normalization of Different Swedish Dialects Spoken in Finland. In *the Proceedings of the 4th ACM SIGSPATIAL International Workshop on Geospatial Humanities*.
 
 **Dialect generation**
 
-Hämäläinen, M., Partanen, N., Alnajjar, K., Rueter J. & Poibeau T. (2020). [Automatic Dialect Adaptation in Finnish and its Effect on Perceived Creativity](https://researchportal.helsinki.fi/files/144027877/ICCC20_finnish_dialect_normalization.pdf). In Proceedings of the 11th International Conference on Computational Creativity. p. 204-211
+Mika Hämäläinen, Niko Partanen, Khalid Alnajjar, Jack Rueter & Thierry Poibeau (2020). [Automatic Dialect Adaptation in Finnish and its Effect on Perceived Creativity](https://www.researchgate.net/publication/344157810_Automatic_Dialect_Adaptation_in_Finnish_and_its_Effect_on_Perceived_Creativity). In *Proceedings of the 11th International Conference on Computational Creativity*. p. 204-211
 
 ## Data
 
