@@ -29,6 +29,15 @@ You can normalize multiple sentences at the same time by running
     sents = ["kissa syö karkkii", "jok laulaa tuol puole", "en tiiä oikee et kuka se o", "kyl on hölömöö"]
     normalize_sentences(sents)
     >> ['kissa syö karkkia', 'joka laulaa tuolla puolen', 'en tiedä oikein että kuka se on', 'kyllä on hölmöä']
+    
+### Swedish
+
+You can use the Swedish model by passing *language=swe*
+
+    from murre import normalize_sentence
+    
+    normalize_sentence("int vet ja", language="swe")
+    >> inte vet jag
 
 ## Generate
 
@@ -61,9 +70,14 @@ Non-standard dialectal data can be a mess to deal with when you are processing y
 
 ## Cite
 
-**Normalization**
+**Normalization (Finnish)**
 
 Niko Partanen, Mika Hämäläinen, and Khalid Alnajjar. 2019. [Dialect Text Normalization to Normative Standard Finnish](https://www.aclweb.org/anthology/D19-5519/). In *the Proceedings of the 5th Workshop on Noisy User-generated Text (W-NUT)*.
+
+
+**Normalization (Swedish)**
+
+Mika Hämäläinen, Niko Partanen and Khalid Alnajjar. Accepted. Normalization of Different Swedish Dialects Spoken in Finland. In *the Proceedings of the 4th ACM SIGSPATIAL International Workshop on Geospatial Humanities*.
 
 **Dialect generation**
 
