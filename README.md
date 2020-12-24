@@ -77,7 +77,7 @@ Niko Partanen, Mika Hämäläinen, and Khalid Alnajjar. (2019). [Dialect Text No
 
 **Normalization (Swedish)**
 
-Mika Hämäläinen, Niko Partanen and Khalid Alnajjar. (2020). [Normalization of Different Swedish Dialects Spoken in Finland](https://dl.acm.org/doi/10.1145/3423337.3429435). In *the Proceedings of the 4th ACM SIGSPATIAL Workshop on Geospatial Humanities*.
+Mika Hämäläinen, Niko Partanen and Khalid Alnajjar. (2020). [Normalization of Different Swedish Dialects Spoken in Finland](https://www.researchgate.net/publication/346933795_Normalization_of_Different_Swedish_Dialects_Spoken_in_Finland). In *the Proceedings of the 4th ACM SIGSPATIAL Workshop on Geospatial Humanities*.
 
 **Dialect generation**
 
