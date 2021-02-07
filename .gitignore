@@ -1,2 +1,5 @@
 murre.egg-info
 *.pyc
+build/
+dist/
+
