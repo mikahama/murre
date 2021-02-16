@@ -20,6 +20,8 @@ def _dechunk(l,n_best=1, best_picker=dummy_picker, orig=[]):
 def normalize_sentences(tokenized_sentences, wnut19_model=False, model_path=None, chunk_size=3, n_best=1, best_picker=dummy_picker, language="fin"):
 	if language == "swe":
 		chunk_size = 1
+	elif language == "fin_hist":
+		chunk_size = 3
 	chunks = []
 	sentence_map = []
 	for i, tokenized_sentence in enumerate(tokenized_sentences):
@@ -53,6 +55,8 @@ def normalize_sentences(tokenized_sentences, wnut19_model=False, model_path=None
 def normalize_sentence(tokens, wnut19_model=False,model_path=None, chunk_size=3, n_best=1, best_picker=dummy_picker, language="fin"):
 	if language == "swe":
 		chunk_size = 1
+	elif language == "fin_hist":
+		chunk_size = 3
 	if isinstance(tokens, str):
 		tokens = tokens.split(" ")
 	chunks_l = _chunks([" ".join(x) for x in tokens],chunk_size)
@@ -69,6 +73,9 @@ def _normalize_chunks(chunks, wnut19_model=False, model_path=None, n_best=1, lan
 		model_name = script_path("models/" + model_name)
 	elif language == "swe":
 		model_name = "swedish_normalization.pt"
+		model_name = script_path("models/" + model_name)
+	elif language == "fin_hist":
+		model_name = "agricola.pt"
 		model_name = script_path("models/" + model_name)
 	else:
 		#Same model trained on MacOS, slightly higher character error rate
