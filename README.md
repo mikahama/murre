@@ -1,5 +1,4 @@
 # 🐶 Murre 🐕
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3473427.svg)](https://doi.org/10.5281/zenodo.3473427)
 
 ![CC BY NC ND](https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png)
 
