@@ -2,7 +2,7 @@ from murre import normalize_sentence, normalize_sentences, dialectalize_sentence
 
 from murre import generator
 
-#print(normalize_sentence("mä syön paljo karkkii".split(" ")))
+print(normalize_sentence("mä syön paljo karkkii".split(" ")))
 
 """
 sents = ["kissa syö karkkii", "jok laulaa tuol puole", "en tiiä oikee et kuka se o", "kyl on hölömöö"]
@@ -31,4 +31,6 @@ print(supported_dialects())
 #	print(dialect)
 #	print(dialectalize_sentences(sentences, dialect))
 
-print(normalize_sentence("wanha ia aika", language="fin_hist"))
+#print(normalize_sentence("wanha ia aika", language="fin_hist"))
+
+print(dialectalize_sentence("kodin takana on koira", "Inkerinsuomalaismurteet"))

@@ -1,5 +1,6 @@
 import os
-os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2' 
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3' 
+import logging
 
 from mikatools import *
 
@@ -7,6 +8,9 @@ import tensorflow as tf
 import tensorflow_addons as tfa
 import pyonmttok
 from .dialects import supported_dialects
+
+logger = tf.get_logger()
+logger.setLevel(logging.ERROR)
 
 class UnknownDialectException(Exception):
 	"""docstring for UnknownDialectException"""
@@ -16,7 +20,7 @@ class UnknownDialectException(Exception):
 
 try:
     tfa.seq2seq.gather_tree(0, 0, 0, 0)
-except tf.errors.InvalidArgumentError:
+except:
     pass
 
 model = None
@@ -44,7 +48,7 @@ def generate(sentences, dialect):
 			o_tokens = o_part.split("_")
 			if len(res_tokens) > len(o_tokens):
 				res_tokens = res_tokens[:len(o_tokens)]
-			r.append("_".join(res_tokens))
+			r.append("_".join(res_tokens).replace(" ",""))
 
 
 		r = "_".join(r)
@@ -56,7 +60,7 @@ def _load_model():
 	global model
 	global tokenizer
 	model = tf.saved_model.load(script_path("models/generate/flags_dist"))
-	tokenizer = pyonmttok.Tokenizer("none", sp_model_path=script_path("models/generate/flags_dist"))
+	tokenizer = pyonmttok.Tokenizer("none")
 
 
 def _translate(texts):
