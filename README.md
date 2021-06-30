@@ -21,8 +21,6 @@ To normalize Finnish, all you need to do is to run:
     normalize_sentence("mä syön paljo karkkii")
     >> minä syön paljon karkkia
 
-To use the same chunk level BRNN model as described in the paper, you can pass *wnut19_model=True*, however this model might only work on Linux.
-
 You can normalize multiple sentences at the same time by running
 
     from murre import normalize_sentences
