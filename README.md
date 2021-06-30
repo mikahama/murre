@@ -95,7 +95,7 @@ Mika Hämäläinen, Niko Partanen, Khalid Alnajjar, Jack Rueter & Thierry Poibea
 
 **Historical Finnish**
 
-Mika Hämäläinen, Niko Partanen and Khalid Alnajjar. (2021). Lemmatization of Historical Old Literary Finnish Texts in Modern Orthography. In *Actes de la Conférence sur le Traitement Automatique des Langues Naturelles (TALN)*.
+Mika Hämäläinen, Niko Partanen and Khalid Alnajjar. (2021). [Lemmatization of Historical Old Literary Finnish Texts in Modern Orthography](https://www.researchgate.net/publication/352837692_Lemmatization_of_Historical_Old_Literary_Finnish_Texts_in_Modern_Orthography). In *Actes de la Conférence sur le Traitement Automatique des Langues Naturelles (TALN)*.
 
 
 
