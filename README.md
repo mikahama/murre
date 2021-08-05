@@ -21,8 +21,6 @@ To normalize Finnish, all you need to do is to run:
     normalize_sentence("mä syön paljo karkkii")
     >> minä syön paljon karkkia
 
-To use the same chunk level BRNN model as described in the paper, you can pass *wnut19_model=True*, however this model might only work on Linux.
-
 You can normalize multiple sentences at the same time by running
 
     from murre import normalize_sentences
@@ -95,7 +93,7 @@ Mika Hämäläinen, Niko Partanen, Khalid Alnajjar, Jack Rueter & Thierry Poibea
 
 **Historical Finnish**
 
-Mika Hämäläinen, Niko Partanen and Khalid Alnajjar. (2021). Lemmatization of Historical Old Literary Finnish Texts in Modern Orthography. In *Actes de la Conférence sur le Traitement Automatique des Langues Naturelles (TALN)*.
+Mika Hämäläinen, Niko Partanen and Khalid Alnajjar. (2021). [Lemmatization of Historical Old Literary Finnish Texts in Modern Orthography](https://www.researchgate.net/publication/352837692_Lemmatization_of_Historical_Old_Literary_Finnish_Texts_in_Modern_Orthography). In *Actes de la Conférence sur le Traitement Automatique des Langues Naturelles (TALN)*.
 
 
 
