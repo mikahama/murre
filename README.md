@@ -76,7 +76,7 @@ The list of available dialects can be obtained by:
 
 <img src="https://rootroo.com/cropped-logo-01-png/" alt="Rootroo logo" width="128px" height="128px">
 
-Non-standard dialectal data can be a mess to deal with when you are processing your customer data. Let us help! [Rootroo offers consulting related to text normalization](https://rootroo.com/). We have a strong academic background in the state-of-the-art AI solutions for every NLP need. Just contact us, we won't bite.
+Non-standard dialectal data can be a mess to deal with when you are processing your customer data. Let us help! [Rootroo offers consulting related to text normalization](https://rootroo.com/). We have a strong academic background in the state-of-the-art AI solutions for every NLP need. Just drop us an email, regardless of the task.
 
 ## Cite
 
