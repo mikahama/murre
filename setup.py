@@ -69,7 +69,7 @@ setup(
     # your project is installed. For an analysis of "install_requires" vs pip's
     # requirements files see:
     # https://packaging.python.org/en/latest/requirements.html
-    install_requires=["natas", "OpenNMT-tf>=2.18.1", "pyonmttok>=1.23.0", "tensorflow==2.4.0", "tensorflow-addons==0.12.1"],
+    install_requires=["natas", "OpenNMT-tf>=2.18.1", "pyonmttok>=1.23.0", "tensorflow==2.5.3", "tensorflow-addons==0.12.1"],
    # List additional groups of dependencies here (e.g. development
     # dependencies). You can install these using the following syntax,
     # for example:
