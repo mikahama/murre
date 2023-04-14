@@ -1,0 +1,36 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: Murre
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - given-names: Mika
+    family-names: Hämäläinen
+  - given-names: Khalid
+    family-names: Alnajjar
+  - given-names: Jack
+    family-names: Rueter
+  - given-names: Niko
+    family-names: Partanen
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.5164231
+    description: Zenodo
+repository-code: 'https://github.com/mikahama/murre'
+date-released: '2021-08-05'
+preferred-citation:
+  type: article
+  authors:
+  - family-names: "Partanen"
+    given-names: "Niko"
+  - family-names: "Hämäläinen"
+    given-names: "Mika"
+  - family-names: "Alnajjar"
+    given-names: "Khalid"
+  journal: "the Proceedings of the 5th Workshop on Noisy User-generated Text (W-NUT)"
+  title: "Dialect Text Normalization to Normative Standard Finnish"
+  year: 2019
