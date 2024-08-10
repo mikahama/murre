@@ -2,7 +2,6 @@
 
 [![Downloads](https://pepy.tech/badge/murre)](https://pepy.tech/project/murre)
 
-![CC BY NC ND](https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png)
 
 The amazing Murre (*genitive Murren* 🐕) will normalize non-standard Finnish (puhekieli) to standard Finnish (kirjakieli). 
 This repository is maintained by [Mika Hämäläinen](https://mikakalevi.com).
