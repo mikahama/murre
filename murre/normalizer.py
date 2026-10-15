@@ -1,5 +1,7 @@
 from mikatools import *
-from natas.normalize import call_onmt
+from onmt_runner import Translator
+
+models = {}
 
 def dummy_picker(list, current_index, original_tokens):
 	if len(list) == 0:
@@ -16,6 +18,34 @@ def _dechunk(l,n_best=1, best_picker=dummy_picker, orig=[]):
 	c = "_".join(c)
 	c = c.replace("_"," ")
 	return c
+
+def _load_model(name):
+	model_path = script_path("models/" + name)
+	if not os.path.exists(model_path):
+		model_path = name
+	m = Translator.load(model_path)
+	models[name] = m
+
+def _give_model(name):
+	if name not in models:
+		_load_model(name)
+	return models[name]
+
+def _split_words(words):
+	return [" ".join(x.lower()) for x in words]
+
+def call_onmt(words, model_name, n_best=10, return_scores=False):
+	model = _give_model(model_name)
+	tss = model.translate_many(words, n_best=n_best, return_scores=return_scores)
+	res = []
+	for ts in tss:
+		if not isinstance(ts, list):
+			ts = [ts]
+		if return_scores is True:
+			res.append([[t.text, t.score] for t in ts])
+		else:
+			res.append(ts)
+	return res
 
 def normalize_sentences(tokenized_sentences, wnut19_model=False, model_path=None, chunk_size=3, n_best=1, best_picker=dummy_picker, language="fin"):
 	if language == "swe":

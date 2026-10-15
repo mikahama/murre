@@ -23,7 +23,7 @@ setup(
     # Versions should comply with PEP440.  For a discussion on single-sourcing
     # the version across setup.py and the project code, see
     # https://packaging.python.org/en/latest/single_source_version.html
-    version='1.4.1',
+    version='2.0.0',
 
     description='The amazing Murre will normalize non-standard Finnish and Swedish, and dialectalize standard Finnish!',
     long_description=long_description,
@@ -69,7 +69,7 @@ setup(
     # your project is installed. For an analysis of "install_requires" vs pip's
     # requirements files see:
     # https://packaging.python.org/en/latest/requirements.html
-    install_requires=["natas", "OpenNMT-tf>=2.18.1", "pyonmttok>=1.23.0", "tensorflow==2.4.0", "tensorflow-addons==0.12.1"],
+    install_requires=["onmt-runner"],
    # List additional groups of dependencies here (e.g. development
     # dependencies). You can install these using the following syntax,
     # for example:
