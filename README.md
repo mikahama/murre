@@ -11,8 +11,29 @@ This repository is maintained by [Mika Hämäläinen](https://mikakalevi.com).
 This library is designed for Python 3 and it may not work on Python 2.
 
     pip3 install murre
+
+Check the installation without downloading or loading any models:
+
+    python3 -c "import murre; print(murre.supported_dialects())"
+
+Download the models separately before normalization or dialect generation:
+
     python3 -m murre.download
     
+For a source checkout, the installation regression check can be run in a fresh
+virtual environment (run the test outside the checkout to use the installed package):
+
+```sh
+python3 -m venv /tmp/murre-smoke
+/tmp/murre-smoke/bin/python -m pip install .
+/tmp/murre-smoke/bin/python -m pip check
+cd /tmp
+/tmp/murre-smoke/bin/python /path/to/murre/tests/test_installation.py -v
+```
+
+The check imports the public API and model downloader, verifies runtime dependency
+metadata and the `onmt-runner` backend, and does not run inference or download models.
+
 ## Normalize
 
 To normalize Finnish, all you need to do is to run:
